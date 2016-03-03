@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eenie.mob.course.fragment.MyCenterFragment"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/center_bg">
+
+        <TextView
+            android:drawableTop="@drawable/ic_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Eenie"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_centerInParent="true" />
+
+        <RadioGroup
+            android:id="@+id/groupCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#80282722"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="必修课程"
+                android:id="@+id/radioRequire"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:checked="true"
+                android:textColor="@color/center_menu_color_selector" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="选修课程"
+                android:id="@+id/radioOptional"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:checked="false"
+                android:textColor="@color/center_menu_color_selector" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="每日签到"
+                android:id="@+id/radioSign"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:checked="false"
+                android:textColor="@color/center_menu_color_selector" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/centerRoot">
+
+
+
+    </LinearLayout>
+</LinearLayout>

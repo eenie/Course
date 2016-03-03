@@ -1,0 +1,3 @@
+include ':app', ':mupdflibrary', ':BDlibrary'
+include ':playerLibRelease'
+include ':playerskin'

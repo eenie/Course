@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/course_bg_default"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="大学物理1：量子力学"
+            android:id="@+id/textView2"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eenie教授"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_alignParentBottom="true"
+            android:drawableLeft="@drawable/ic_talk"
+            android:text="上次进度：量子力学初探"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="false"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</LinearLayout>
