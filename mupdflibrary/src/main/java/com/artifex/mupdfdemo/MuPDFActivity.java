@@ -44,11 +44,9 @@ public class MuPDFActivity extends Activity {
         Main, Search, Annot, Delete, More, Accept
     }
 
-    ;
+
 
     enum AcceptMode {Highlight, Underline, StrikeOut, Ink, CopyText}
-
-    ;
 
     private final int OUTLINE_REQUEST = 0;
     private final int PRINT_REQUEST = 1;
@@ -216,6 +214,10 @@ public class MuPDFActivity extends Activity {
         try {
             core = new MuPDFCore(this, path);
             // New file: drop the old outline data
+
+
+
+
             OutlineActivityData.set(null);
         } catch (Exception e) {
             System.out.println(e);

@@ -12,6 +12,9 @@ public class MuPDFCore {
     /* load our native library */
     static {
         System.loadLibrary("mupdf");
+
+
+
     }
 
     /* Readable members */

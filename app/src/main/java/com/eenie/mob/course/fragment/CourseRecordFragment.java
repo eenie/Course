@@ -41,7 +41,6 @@ public class CourseRecordFragment extends Fragment {
     }
 
     private void initView(View root) {
-
         courseRecordList = (ListView) root.findViewById(R.id.courseRecordList);
         emptyView = root.findViewById(R.id.emptyList);
         courseRecordList.setEmptyView(emptyView);
@@ -59,8 +58,6 @@ public class CourseRecordFragment extends Fragment {
 
         @Override
         public Object getItem(int position) {
-
-
             return position;
         }
 
@@ -75,7 +72,6 @@ public class CourseRecordFragment extends Fragment {
             if (convertView == null) {
                 convertView = getLayoutInflater(Bundle.EMPTY).inflate(R.layout.listview_item, null);
             }
-
             return convertView;
         }
     }

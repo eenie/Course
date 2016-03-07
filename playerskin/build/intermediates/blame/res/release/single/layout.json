@@ -32,12 +32,12 @@
         "source": "G:\\MySimple\\Course\\playerskin\\src\\main\\res\\layout\\letv_skin_v4_large_gesture_volume_layout.xml"
     },
     {
-        "merged": "G:\\MySimple\\Course\\playerskin\\build\\intermediates\\res\\merged\\release\\layout\\letv_skin_v4_controller_layout.xml",
-        "source": "G:\\MySimple\\Course\\playerskin\\src\\main\\res\\layout\\letv_skin_v4_controller_layout.xml"
-    },
-    {
         "merged": "G:\\MySimple\\Course\\playerskin\\build\\intermediates\\res\\merged\\release\\layout\\letv_skin_v4_ratetype_item.xml",
         "source": "G:\\MySimple\\Course\\playerskin\\src\\main\\res\\layout\\letv_skin_v4_ratetype_item.xml"
+    },
+    {
+        "merged": "G:\\MySimple\\Course\\playerskin\\build\\intermediates\\res\\merged\\release\\layout\\letv_skin_v4_controller_layout.xml",
+        "source": "G:\\MySimple\\Course\\playerskin\\src\\main\\res\\layout\\letv_skin_v4_controller_layout.xml"
     },
     {
         "merged": "G:\\MySimple\\Course\\playerskin\\build\\intermediates\\res\\merged\\release\\layout\\letv_skin_v4_large_mult_live_action_sub_live_lay.xml",

@@ -16,6 +16,8 @@ import java.util.List;
 public class CourseApplication extends Application {
     public static String getProcessName(Context cxt, int pid) {
         ActivityManager am = (ActivityManager) cxt.getSystemService(Context.ACTIVITY_SERVICE);
+
+
         List<ActivityManager.RunningAppProcessInfo> runningApps = am.getRunningAppProcesses();
         if (runningApps != null) {
             for (ActivityManager.RunningAppProcessInfo procInfo : runningApps) {

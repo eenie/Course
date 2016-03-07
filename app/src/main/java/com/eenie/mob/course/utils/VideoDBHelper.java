@@ -33,7 +33,6 @@ public class VideoDBHelper {
     private static LastTimeDBConnection helper;
     /**
      * 单例
-     * 
      * @return
      */
     public static VideoDBHelper getInstance(Context ctx) {
