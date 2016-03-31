@@ -75,6 +75,6 @@ public class PlayerAssistant {
         VideoDBHelper dbHelper = VideoDBHelper.getInstance(mContext);
         dbHelper.setVideoConfig(uuid, vuid, position, defination + "");
         KLog.d("uuid:" + uuid + ",vuid:" + vuid + ",position:" + position + ",defination:" + defination);
-    }
+}
 
 }

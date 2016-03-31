@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 
-import com.letv.skin.v4.V4PlaySkin;
+
 
 public class CourseInfoActivity extends AppCompatActivity {
 

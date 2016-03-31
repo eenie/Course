@@ -36,8 +36,6 @@ public class PdfReaderActivity extends AppCompatActivity {
     private ActionBar actionBar;
     private TextView txtPro;
     private static final String TAG = "PdfFragment";
-
-
     SharedPreferences spfs;
 
     @Override
@@ -69,12 +67,12 @@ public class PdfReaderActivity extends AppCompatActivity {
                         return;
                     proPdf.setProgress(i + 1);
                     txtPro.setText(String.valueOf(i + 1) + "/" + String.valueOf(core.countPages()));
-                    savePage("sample", i);
+                    saveLastPage("sample", i);
                     super.onMoveToChild(i);
                 }
             };
             mDocView.setAdapter(new MuPDFPageAdapter(mContext, core));
-            mDocView.setDisplayedViewIndex(getPage("sample"));
+            mDocView.setDisplayedViewIndex(getLastPage("sample"));
             pdfLayout.addView(mDocView);
         }
 
@@ -118,6 +116,7 @@ public class PdfReaderActivity extends AppCompatActivity {
         try {
             core = new MuPDFCore(mContext, path);
 
+
         } catch (Exception e) {
             Log.e(TAG, e.getMessage());
             return null;
@@ -154,13 +153,13 @@ public class PdfReaderActivity extends AppCompatActivity {
     }
 
 
-    private void savePage(String fileName, int pageCount) {
+    private void saveLastPage(String fileName, int pageCount) {
         SharedPreferences.Editor editor = spfs.edit();
         editor.putInt(fileName, pageCount);
         editor.commit();
     }
 
-    private int getPage(String fileName) {
+    private int getLastPage(String fileName) {
         return spfs.getInt(fileName, 0);
     }
 

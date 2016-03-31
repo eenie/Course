@@ -1,6 +1,7 @@
 package com.eenie.mob.course.fragment;
 
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -58,6 +59,10 @@ public class MyCenterFragment extends Fragment implements RadioGroup.OnCheckedCh
 
         groupCourse = (RadioGroup) myCenterRootView.findViewById(R.id.groupCourse);
         groupCourse.setOnCheckedChangeListener(this);
+
+
+
+
         return myCenterRootView;
     }
 

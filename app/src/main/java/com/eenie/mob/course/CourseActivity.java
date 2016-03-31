@@ -12,14 +12,10 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.RadioGroup;
-import android.widget.Toast;
+
 
 import com.eenie.mob.course.fragment.CourseListFragment;
 import com.eenie.mob.course.fragment.CourseRecordFragment;
-import com.eenie.mob.course.utils.LetvParamsUtils;
-import com.eenie.mob.course.utils.LetvSimplePlayBoard;
-import com.letv.controller.LetvPlayer;
-import com.letv.skin.v4.V4PlaySkin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +55,9 @@ public class CourseActivity extends AppCompatActivity implements RadioGroup.OnCh
         fmtRTransaction = fmtManager.beginTransaction();
         fmtRTransaction.add(courseRootID, fragments.get(choosed));
         fmtRTransaction.commit();
+
+
+
 
     }
 

@@ -84,8 +84,7 @@ public class DaySignFragment extends Fragment implements BDLocationListener{
 
     private void initLocation() {
         LocationClientOption option = new LocationClientOption();
-        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy
-        );//可选，默认高精度，设置定位模式，高精度，低功耗，仅设备
+        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);//可选，默认高精度，设置定位模式，高精度，低功耗，仅设备
         option.setCoorType("bd09ll");//可选，默认gcj02，设置返回的定位结果坐标系
         int span = 0;
         option.setScanSpan(span);//可选，默认0，即仅定位一次，设置发起定位请求的间隔需要大于等于1000ms才是有效的
@@ -105,7 +104,7 @@ public class DaySignFragment extends Fragment implements BDLocationListener{
 
 
 
-        StringBuffer sb = new StringBuffer(256);
+        StringBuffer sb = new StringBuffer();
         sb.append("time : ");
         sb.append(location.getTime());
         sb.append("\nerror code : ");
